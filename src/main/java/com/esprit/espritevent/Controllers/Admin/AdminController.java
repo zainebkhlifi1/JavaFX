@@ -14,8 +14,9 @@ public class AdminController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Model.getInstance().getViewFactroy().getAdminSelectedMenuItem().addListener(((observableValue, oldVal, newVal) ->{
             switch (newVal) {
-                 case "ManageClubs" -> admin_parent.setCenter(Model.getInstance().getViewFactroy().getManageClubsView());
+                case "ManageClubs" -> admin_parent.setCenter(Model.getInstance().getViewFactroy().getManageClubsView());
                 case "ManageEvents" -> admin_parent.setCenter(Model.getInstance().getViewFactroy().getManageEventsView());
+                case "ManageLocals" -> admin_parent.setCenter(Model.getInstance().getViewFactroy().getManageLocalsView());
                 default -> admin_parent.setCenter(Model.getInstance().getViewFactroy().getDahsboardView());
             }
         } ));

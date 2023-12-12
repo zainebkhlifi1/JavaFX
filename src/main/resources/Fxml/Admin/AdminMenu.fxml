@@ -24,7 +24,7 @@
                      <graphic>
                         <FontAwesomeIconView size="20" text="" />
                      </graphic></Button>
-                        <Button fx:id="manage_club_btn" mnemonicParsing="false" text="Manage Clubs">
+                        <Button fx:id="manage_clubs_btn" mnemonicParsing="false" text="Manage Clubs">
                      <graphic>
                         <FontAwesomeIconView size="20" />
                      </graphic></Button>
@@ -32,7 +32,7 @@
                      <graphic>
                         <FontAwesomeIconView size="20" />
                      </graphic></Button>
-                  <Button fx:id="manage_premises_btn" mnemonicParsing="false" text="Manage Premises">
+                  <Button fx:id="manage_locals_btn" mnemonicParsing="false" text="Manage Locals">
                      <graphic>
                         <FontAwesomeIconView size="20" />
                      </graphic>

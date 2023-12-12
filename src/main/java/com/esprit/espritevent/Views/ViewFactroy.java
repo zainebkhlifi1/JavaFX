@@ -18,6 +18,7 @@ public class ViewFactroy {
     private AnchorPane dahsboardView;
     private AnchorPane manageClubsView;
     private AnchorPane manageEventsView;
+    private AnchorPane manageLocalsView;
     Stage stage = new Stage();
     public ViewFactroy() {
             this.adminSelectedMenuItem = new SimpleStringProperty("");
@@ -63,6 +64,17 @@ public class ViewFactroy {
         return manageEventsView;
     }
 
+    public AnchorPane getManageLocalsView (){
+        if(manageLocalsView == null){
+            try {
+                manageLocalsView = new FXMLLoader(getClass().getResource("/Fxml/Admin/ManageLocals.fxml")).load();
+            }catch (Exception e ){
+                e.printStackTrace();
+            }
+
+        }
+        return manageLocalsView;
+    }
 
     public void showLoginWindow (){
        FXMLLoader loader =  new FXMLLoader(getClass().getResource("/Fxml/Login.fxml"));
