@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class Local {
-    private  long idLocal ;
+    private  long idLocal;
     private String localName;
     private long localCapacity;
     private Date localAvailableFrom  ;

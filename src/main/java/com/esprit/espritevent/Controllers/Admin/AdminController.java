@@ -17,6 +17,7 @@ public class AdminController implements Initializable {
                 case "ManageClubs" -> admin_parent.setCenter(Model.getInstance().getViewFactroy().getManageClubsView());
                 case "ManageEvents" -> admin_parent.setCenter(Model.getInstance().getViewFactroy().getManageEventsView());
                 case "ManageLocals" -> admin_parent.setCenter(Model.getInstance().getViewFactroy().getManageLocalsView());
+                case "ManageManager" -> admin_parent.setCenter(Model.getInstance().getViewFactroy().getManageManagersView());
                 default -> admin_parent.setCenter(Model.getInstance().getViewFactroy().getDahsboardView());
             }
         } ));

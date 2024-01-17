@@ -37,7 +37,7 @@
                         <FontAwesomeIconView size="20" />
                      </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" text="Manage Club Managers">
+                  <Button fx:id="manage_manager_btn" mnemonicParsing="false" text="Manage Club Managers">
                      <graphic>
                         <FontAwesomeIconView size="20" />
                      </graphic>
